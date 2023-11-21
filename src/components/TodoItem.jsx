@@ -18,6 +18,12 @@ export const TodoItem = ( {task} ) => {
         dispatch(tasks.actions.removeTask({ taskID: task.taskID }));
     };
 
+    // TODO: Add new dispatch to mark task as complete/incomplete
+    const markTask = () => {
+        console.log(`Trying to mark task '${task.description}' with taskID ${task.taskID}`);
+        // add dispatch function
+    }
+
     return(
         <div 
             className={`todo-item ${isHovered ? 'item-hovered' : 'item-not-hovered'}`}
@@ -28,6 +34,9 @@ export const TodoItem = ( {task} ) => {
                 <h2>{task.description}</h2>
                 <h3>Created: {task.timestamp}</h3>
             </div>
+            {
+                // TODO: Add complete/incomplete interactive text
+            }
             <button className={isHovered ? 'show' : 'hidden'} onClick={removeTask}>❌</button>
         </div>
     );
