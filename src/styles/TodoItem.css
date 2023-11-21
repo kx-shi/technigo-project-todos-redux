@@ -1,0 +1,39 @@
+.todo-item {
+    display: flex;
+    background-color: #fefae0;
+    width: 100%;
+    padding: 0 1em;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.task-complete {
+    text-decoration: line-through;
+}
+
+.task-incomplete {
+    text-decoration: none;
+}
+
+.todo-item button {
+    border: none;
+    font-size: 1.5em;
+    background: none;
+    cursor: pointer;
+}
+
+.item-hovered {
+    background-color: #faedcd;
+}
+
+.item-not-hovered {
+    background-color: #fefae0;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

@@ -11,4 +11,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e9edc9;
+  color: #344e41;
+}
+
+.todo-container {
+  width: 50%;
+  margin: 0 auto;
 }
