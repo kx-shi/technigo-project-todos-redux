@@ -21,7 +21,8 @@ export const TodoItem = ( {task} ) => {
     // TODO: Add new dispatch to mark task as complete/incomplete
     const markTask = () => {
         console.log(`Trying to MARK task '${task.description}' with taskID ${task.taskID}`);
-        dispatch(tasks.actions.markTask({ taskID: task.taskID, isComplete: !isComplete  }));
+        dispatch(tasks.actions.markTask({ taskID: task.taskID  }));
+        console.log(`The task '${task.description}' with taskID ${task.taskID} is toggled with '${task.isComplete}'`);
         // add dispatch function
     }
 
@@ -38,8 +39,10 @@ export const TodoItem = ( {task} ) => {
             {
                 // TODO: Add complete/incomplete interactive text
             }
+            
             <button className={isHovered ? 'show' : 'hidden'} onClick={markTask}>✅</button>
             <button className={isHovered ? 'show' : 'hidden'} onClick={removeTask}>❌</button>
+           
         </div>
     );
 };
