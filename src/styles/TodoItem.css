@@ -4,6 +4,10 @@
     width: 100%;
     padding: 0 1em;
     margin: 10px;
+}
+
+
+.todo-description {
     justify-content: space-between;
 }
 

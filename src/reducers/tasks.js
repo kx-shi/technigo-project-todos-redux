@@ -55,9 +55,11 @@ export const tasks = createSlice({
      */
     markTask: (state, action) => {
       const { taskID } = action.payload;
+
       // TODO: Find the task with corresponding taskID in taskList and
       //  modify that task's `isComplete` property
-
+      let taskToMark = state.taskList.find((task) => task.taskID === taskID)
+      taskToMark.isComplete = !taskToMark.isComplete
     },
 
     /**
