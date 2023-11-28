@@ -35,8 +35,10 @@ export const TodoItem = ( {task} ) => {
                 <h2>{task.description}</h2>
                 <h3>Created: {task.timestamp}</h3>
             </div>
-            <button className={isHovered ? 'show' : 'hidden'} onClick={markTask} title="mark as complete">✅</button>
-            <button className={isHovered ? 'show' : 'hidden'} onClick={removeTask} title="remove">❌</button>
+            <div className="todo-buttons">
+                <button className={isHovered ? 'show' : 'hidden'} onClick={markTask} title="mark as complete">✅</button>
+                <button className={isHovered ? 'show' : 'hidden'} onClick={removeTask} title="remove">❌</button>
+            </div>
         </div>
     );
 };

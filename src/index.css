@@ -19,3 +19,15 @@ body {
   width: 50%;
   margin: 0 auto;
 }
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 0.8em;
+}
